@@ -27,6 +27,18 @@ export class CreateLessonPlanDto {
   @IsString({ message: 'The filePath must be a string.' })
   filePath: string;
 
+  @IsString()
+  @IsOptional()
+  objectives?: string;
+
+  @IsString()
+  @IsOptional()
+  activities?: string;
+
+  @IsString()
+  @IsOptional()
+  evaluation?: string;
+
   @IsDate({ message: 'The createdAt must be a valid date.' })
   @IsOptional()
   createdAt?: Date;

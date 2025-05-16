@@ -8,6 +8,7 @@ import { LessonPlanRepository } from './core/repositories/lesson-plan.repository
 import { ObjectiveRepository } from './core/repositories/objective.repository';
 import { CreateActivityUseCase } from './core/use-cases/create-activity.use-case';
 import { CreateEvaluationUseCase } from './core/use-cases/create-evaluation.use-case';
+import { CreateManuallyLessonPlanUseCase } from './core/use-cases/create-manually-lesson-plan.use-case';
 import { CreateObjectiveUseCase } from './core/use-cases/create-objective.use-case';
 import { DeleteLessonPlanByIdUseCase } from './core/use-cases/delete-lesson-plan-by-id.use-case';
 import { FindLessonPlanByIdUseCase } from './core/use-cases/find-lesson-plan-by-id.use-case';
@@ -63,6 +64,8 @@ import { LessonPlanController } from './infra/http/controllers/lesson-plan.contr
     DeleteLessonPlanByIdUseCase,
     GenerateLessonPlanPDFUseCase,
     FindLessonPlanByIdUseCase,
+
+    CreateManuallyLessonPlanUseCase,
   ],
 })
 export class LessonPlanModule {}

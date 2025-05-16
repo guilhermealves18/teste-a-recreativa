@@ -2,6 +2,8 @@
 
 Este é o backend do projeto. Ele foi desenvolvido utilizando o framework **NestJS**, que é baseado no **Express**, conforme solicitado na tarefa. A escolha do NestJS foi feita para aproveitar sua estrutura modular e ferramentas integradas, que facilitam o desenvolvimento e a manutenção do código.
 
+O projeto segue os princípios de **DDD (Domain-Driven Design)**, organizando o código em módulos bem definidos e separados por camadas (como domínio, aplicação e infraestrutura). Essa abordagem facilita a escalabilidade e a manutenção do sistema.
+
 Além disso, o conteúdo deste README foi aprimorado com a ajuda do **GitHub Copilot**, garantindo uma documentação clara e bem estruturada.
 
 Siga as instruções abaixo para instalar e executar o ambiente.

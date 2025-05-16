@@ -1,4 +1,3 @@
-// src/app/modules/lesson-plan/infra/file.service.ts
 import { Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 import * as mammoth from 'mammoth';

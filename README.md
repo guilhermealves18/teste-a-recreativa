@@ -1,5 +1,7 @@
 # 📚 Projeto - Gerenciamento de Planos de Aula
 
+> **Nota**: Este documento foi elaborado com o auxílio do **GitHub Copilot**, uma ferramenta de inteligência artificial que ajuda a melhorar a escrita e a organização de textos técnicos. O objetivo é fornecer uma documentação clara e objetiva para facilitar o uso e a compreensão do projeto.
+
 Este projeto é composto por três partes principais: **Frontend**, **Backend** e **Configurações do Insomnia**. Ele foi desenvolvido para facilitar o gerenciamento de planos de aula, permitindo o upload, visualização, exclusão e geração de documentos de forma eficiente.
 
 ---
@@ -112,6 +114,26 @@ recreativa/
 
 ---
 
+## ⚙️ Versões Utilizadas
+
+### Backend
+No desenvolvimento do backend, foram utilizadas as seguintes versões do Node.js e npm:
+
+- **Node.js**: v22.15.0  
+- **npm**: 11.3.0  
+
+Certifique-se de utilizar essas versões ou versões compatíveis para evitar problemas de compatibilidade durante a instalação das dependências e execução do projeto.
+
+### Frontend
+No desenvolvimento do frontend, foram utilizadas as seguintes versões do Node.js e npm:
+
+- **Node.js**: v20.19.1  
+- **npm**: 10.8.2  
+
+Recomenda-se utilizar essas versões ou versões compatíveis para garantir o funcionamento correto do ambiente de desenvolvimento.
+
+---
+
 ## ⚠️ Observações
 
 - Certifique-se de que o **backend esteja rodando antes de utilizar o frontend**.
@@ -120,4 +142,3 @@ recreativa/
 ---
 
 Feito com 💡 para facilitar o dia a dia de quem gerencia planos de aula.
-```

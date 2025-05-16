@@ -1,0 +1,90 @@
+type: collection.insomnia.rest/5.0
+name: Lesson Plan
+meta:
+  id: wrk_7e4a047fb8a4474e92f62dfb391c3ab2
+  created: 1747135981762
+  modified: 1747136002397
+collection:
+  - url: http://localhost:3000/lesson-plan/upload
+    name: Create
+    meta:
+      id: req_c8c0547cd28242808a228edf0e41953b
+      created: 1747135981799
+      modified: 1747325225480
+      isPrivate: false
+      sortKey: -1747135981799
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_25ad2a76d81b4f198e525c77565a1f83
+          name: file
+          disabled: false
+          type: file
+          fileName: /home/guilherme-gouveia-alves/Documentos/para upar.pdf
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/lesson-plan
+    name: List
+    meta:
+      id: req_ea86872d891e4fffa0c09e584c285446
+      created: 1747229099266
+      modified: 1747325268467
+      isPrivate: false
+      sortKey: -1746633489859.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/lesson-plan/227930bd-2f18-41ae-adae-df3cce895c61
+    name: Delete
+    meta:
+      id: req_eab8fe1744324dae98fa49d30f1c6c5c
+      created: 1747325113481
+      modified: 1747325423961
+      isPrivate: false
+      sortKey: -1746884735829.25
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_b090926fe3ee676befb44a581c720fdafb67acc2
+    created: 1747135981766
+    modified: 1747135981766
+environments:
+  name: Base Environment
+  meta:
+    id: env_b090926fe3ee676befb44a581c720fdafb67acc2
+    created: 1747135981764
+    modified: 1747135981764
+    isPrivate: false

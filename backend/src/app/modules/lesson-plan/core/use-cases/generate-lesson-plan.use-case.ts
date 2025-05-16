@@ -11,7 +11,7 @@ import { FindLessonPlanByIdUseCase } from './find-lesson-plan-by-id.use-case';
 import { GenerateLessonPlanPDFUseCase } from './generate-lesson-plan-pdf.use-case';
 
 @Injectable()
-export class CreateLessonPlanUseCase {
+export class GenerateLessonPlanUseCase {
   constructor(
     private readonly createObjectiveUseCase: CreateObjectiveUseCase,
     private readonly createActivityUseCase: CreateActivityUseCase,

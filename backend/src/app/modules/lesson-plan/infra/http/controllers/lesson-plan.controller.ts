@@ -10,15 +10,15 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { CreateLessonPlanUseCase } from '../../../core/use-cases/create-lesson-plan.use-case';
 import { DeleteLessonPlanByIdUseCase } from '../../../core/use-cases/delete-lesson-plan-by-id.use-case';
+import { GenerateLessonPlanUseCase } from '../../../core/use-cases/generate-lesson-plan.use-case';
 import { ListLessonPlanUseCase } from '../../../core/use-cases/list-lesson-plan.use-case';
 import { CreateLessonPlanDto } from '../dtos/create-lesson-plan.dto';
 
 @Controller('lesson-plan')
 export class LessonPlanController {
   constructor(
-    private readonly createLessonPlanUseCase: CreateLessonPlanUseCase,
+    private readonly generateLessonPlanUseCase: GenerateLessonPlanUseCase,
     private readonly listLessonPlanUseCase: ListLessonPlanUseCase,
     private readonly deleteLessonPlanByIdUseCase: DeleteLessonPlanByIdUseCase,
   ) {}
@@ -30,7 +30,7 @@ export class LessonPlanController {
     @Body()
     data: CreateLessonPlanDto,
   ) {
-    return await this.createLessonPlanUseCase.execute(file, data);
+    return await this.generateLessonPlanUseCase.execute(file, data);
   }
 
   @Delete(':id')

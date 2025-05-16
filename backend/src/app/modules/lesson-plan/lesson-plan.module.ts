@@ -8,10 +8,11 @@ import { LessonPlanRepository } from './core/repositories/lesson-plan.repository
 import { ObjectiveRepository } from './core/repositories/objective.repository';
 import { CreateActivityUseCase } from './core/use-cases/create-activity.use-case';
 import { CreateEvaluationUseCase } from './core/use-cases/create-evaluation.use-case';
-import { CreateLessonPlanUseCase } from './core/use-cases/create-lesson-plan.use-case';
 import { CreateObjectiveUseCase } from './core/use-cases/create-objective.use-case';
+import { DeleteLessonPlanByIdUseCase } from './core/use-cases/delete-lesson-plan-by-id.use-case';
 import { FindLessonPlanByIdUseCase } from './core/use-cases/find-lesson-plan-by-id.use-case';
 import { GenerateLessonPlanPDFUseCase } from './core/use-cases/generate-lesson-plan-pdf.use-case';
+import { GenerateLessonPlanUseCase } from './core/use-cases/generate-lesson-plan.use-case';
 import { ListLessonPlanUseCase } from './core/use-cases/list-lesson-plan.use-case';
 import { FileService } from './infra/database/file.service';
 import { PrismaActivityRepository } from './infra/database/prisma/repositories/prisma.activity.repository';
@@ -19,7 +20,6 @@ import { PrismaEvaluationRepository } from './infra/database/prisma/repositories
 import { PrismaLessonPlanRepository } from './infra/database/prisma/repositories/prisma.lesson-plan.repository';
 import { PrismaObjectiveRepository } from './infra/database/prisma/repositories/prisma.objective.repository';
 import { LessonPlanController } from './infra/http/controllers/lesson-plan.controller';
-import { DeleteLessonPlanByIdUseCase } from './core/use-cases/delete-lesson-plan-by-id.use-case';
 
 @Module({
   imports: [
@@ -58,7 +58,7 @@ import { DeleteLessonPlanByIdUseCase } from './core/use-cases/delete-lesson-plan
     CreateObjectiveUseCase,
     CreateActivityUseCase,
     CreateEvaluationUseCase,
-    CreateLessonPlanUseCase,
+    GenerateLessonPlanUseCase,
     ListLessonPlanUseCase,
     DeleteLessonPlanByIdUseCase,
     GenerateLessonPlanPDFUseCase,
